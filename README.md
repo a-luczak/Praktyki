@@ -99,9 +99,6 @@ wykres temperatur,
 
 log komunikacji.
 
-📷 Zrzut ekranu (opcjonalnie)
-
-(tu możesz wkleić screenshot z działającego programu – np. wykres z czujnika)
 
 🧠 Autor
 
