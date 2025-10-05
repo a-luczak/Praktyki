@@ -1,5 +1,4 @@
 # Praktyki
-# 🧊 PT100 Manager (Serial)
 
 **PT100_App.py** to aplikacja graficzna (GUI) w Pythonie służąca do zarządzania i monitorowania czujników temperatury **PT100** komunikujących się przez port szeregowy (np. z mikrokontrolerem typu Arduino).  
 Program pozwala na konfigurację czujników, odczyt temperatur, logowanie danych do pliku CSV i wizualizację przebiegu temperatury w czasie.
