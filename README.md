@@ -21,8 +21,10 @@ Program pozwala na konfigurację czujników, odczyt temperatur, logowanie danych
 
 Aplikacja wymaga Pythona **3.8+** oraz następujących bibliotek:
 
-```bash
-pip install pyserial matplotlib PySide6```
+```
+bash
+pip install pyserial matplotlib PySide6
+```
 💡 Jeśli nie masz PySide6, aplikacja spróbuje automatycznie użyć PyQt6.
 
 🚀 Uruchomienie
