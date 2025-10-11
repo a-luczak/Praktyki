@@ -113,9 +113,9 @@ d) wykres temperatur,
 e) log komunikacji.
 
 
-## 🧠 Autor
+## 👤 Autorzy
 
-Projekt edukacyjny napisany w Pythonie z użyciem PySide6 i matplotlib, przeznaczony do testowania i wizualizacji pomiarów z czujników PT100.
+Projekt edukacyjny stworzony przez Michała Dulka i Andrzeja Łuczaka w ramach praktyk na Politechnice Poznańskiej.
 
 ## ⚖️ Licencja
 
