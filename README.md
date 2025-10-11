@@ -39,13 +39,13 @@ python PT100_App.py
 
 3. W oknie programu:
 
-a) kliknij Refresh Ports i wybierz odpowiedni port (np. COM3 lub /dev/ttyUSB0),
+- kliknij Refresh Ports i wybierz odpowiedni port (np. COM3 lub /dev/ttyUSB0),
 
-b) naciśnij Connect,
+- naciśnij Connect,
 
-c) użyj przycisków LIST, READ, NEW, SET, DEL, aby komunikować się z urządzeniem,
+- użyj przycisków LIST, READ, NEW, SET, DEL, aby komunikować się z urządzeniem,
 
-d) włącz opcję Auto save lub wybierz plik CSV, aby logować pomiary.
+- włącz opcję Auto save lub wybierz plik CSV, aby logować pomiary.
 
 ---
 
@@ -71,39 +71,44 @@ lub (dla LIST):
 ## 📊 Logowanie danych
 
 Dane zapisywane są w formacie CSV:
-
+```
 timestamp_iso, epoch_ms, id, name, temp_c, source
-
+```
 
 Źródło (source) może przyjąć wartości:
 
-read – odczyt wykonany komendą READ
+- read – odczyt wykonany komendą READ
 
-interval – automatyczny pomiar cykliczny
+- interval – automatyczny pomiar cykliczny
 
-list_export – eksport z tabeli
+- list_export – eksport z tabeli
 
-Struktura projektu
+---
+
+## Struktura projektu
+
+```
 PT100_App.py        # główny plik programu
 README.md           # opis projektu
+```
 
 ## 📘 Architektura aplikacji
 
-SerialBackend – odpowiada za łączność szeregową, uruchamia wątek czytający dane i emituje sygnały do GUI.
+- SerialBackend – odpowiada za łączność szeregową, uruchamia wątek czytający dane i emituje sygnały do GUI.
 
-CsvLogger – zarządza zapisem pomiarów do pliku CSV.
+- CsvLogger – zarządza zapisem pomiarów do pliku CSV.
 
-PT100App – główne okno aplikacji, w którym znajdują się:
+- PT100App – główne okno aplikacji, w którym znajdują się:
 
-wybór portu,
+a) wybór portu,
 
-polecenia dla urządzenia,
+b) polecenia dla urządzenia,
 
-tabela czujników,
+c) tabela czujników,
 
-wykres temperatur,
+d) wykres temperatur,
 
-log komunikacji.
+e) log komunikacji.
 
 
 ## 🧠 Autor
