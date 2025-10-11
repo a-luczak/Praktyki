@@ -12,7 +12,7 @@ Program pozwala na konfigurację czujników, odczyt temperatur, logowanie danych
 - 💾 Zapisywanie pomiarów do pliku CSV (ręcznie lub automatycznie)  
 - 📈 Wykres temperatury w czasie (z możliwością ograniczenia okna czasowego)  
 - 🧮 Tabela z aktualnymi danymi czujników  
-- 🪵 Log tekstowy wszystkich komunikatów i poleceń  
+- 🗒️ Log tekstowy wszystkich komunikatów i poleceń  
 
 ---
 
@@ -33,9 +33,9 @@ pip install pyserial matplotlib PySide6
 1. Podłącz mikrokontroler z czujnikiem PT100 do komputera przez USB.
 
 2. Uruchom aplikację:
-
+```
 python PT100_App.py
-
+```
 
 3. W oknie programu:
 
@@ -50,12 +50,14 @@ python PT100_App.py
 ---
 
 ## 🧩 Obsługiwane komendy (wysyłane do urządzenia)
-Komenda	Opis
-LIST	zwraca listę wszystkich zarejestrowanych czujników w formacie JSON
-READ id=X	odczytuje temperaturę z czujnika o danym ID
-NEW id=X pin=A0 name=PT100	tworzy nowy czujnik
-SET id=X name=NowyCzujnik interval=1000	zmienia parametry czujnika
-DEL id=X	usuwa czujnik
+
+| Komenda | Opis |
+|------------|------------|
+| LIST  | zwraca listę wszystkich zarejestrowanych czujników w formacie JSON  |
+| READ id=X  | odczytuje temperaturę z czujnika o danym ID  |
+| NEW id=X pin=A0 name=PT100  | tworzy nowy czujnik  |
+| SET id=X name=NowyCzujnik interval=1000  | zmienia parametry czujnika  |
+| DEL id=X  | usuwa czujnik  |
 
 Urządzenie powinno odpowiadać w formacie JSON, np.:
 ```
