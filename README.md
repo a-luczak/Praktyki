@@ -26,7 +26,9 @@ pip install pyserial matplotlib PySide6
 ```
 💡 Jeśli nie masz PySide6, aplikacja spróbuje automatycznie użyć PyQt6.
 
-🚀 Uruchomienie
+---
+
+## 🚀 Uruchomienie
 
 1. Podłącz mikrokontroler z czujnikiem PT100 do komputera przez USB.
 
@@ -45,7 +47,9 @@ c) użyj przycisków LIST, READ, NEW, SET, DEL, aby komunikować się z urządze
 
 d) włącz opcję Auto save lub wybierz plik CSV, aby logować pomiary.
 
-🧩 Obsługiwane komendy (wysyłane do urządzenia)
+---
+
+## 🧩 Obsługiwane komendy (wysyłane do urządzenia)
 Komenda	Opis
 LIST	zwraca listę wszystkich zarejestrowanych czujników w formacie JSON
 READ id=X	odczytuje temperaturę z czujnika o danym ID
@@ -54,15 +58,17 @@ SET id=X name=NowyCzujnik interval=1000	zmienia parametry czujnika
 DEL id=X	usuwa czujnik
 
 Urządzenie powinno odpowiadać w formacie JSON, np.:
-
+```
 {"id": 1, "name": "PT100", "pin": "A0", "t": 23.45}
-
+```
 
 lub (dla LIST):
-
+```
 {"s": [{"id": 1, "name": "PT100", "pin": "A0", "active": 1}]}
+```
+---
 
-📊 Logowanie danych
+## 📊 Logowanie danych
 
 Dane zapisywane są w formacie CSV:
 
@@ -81,7 +87,7 @@ Struktura projektu
 PT100_App.py        # główny plik programu
 README.md           # opis projektu
 
-📘 Architektura aplikacji
+## 📘 Architektura aplikacji
 
 SerialBackend – odpowiada za łączność szeregową, uruchamia wątek czytający dane i emituje sygnały do GUI.
 
@@ -100,11 +106,11 @@ wykres temperatur,
 log komunikacji.
 
 
-🧠 Autor
+## 🧠 Autor
 
 Projekt edukacyjny napisany w Pythonie z użyciem PySide6 i matplotlib, przeznaczony do testowania i wizualizacji pomiarów z czujników PT100.
 
-Licencja
+## Licencja
 
 Ten projekt możesz dowolnie wykorzystywać do celów naukowych lub własnych testów.
 Autor nie ponosi odpowiedzialności za błędne odczyty lub uszkodzenia sprzętu.
