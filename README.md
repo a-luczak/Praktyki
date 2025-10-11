@@ -87,7 +87,7 @@ timestamp_iso, epoch_ms, id, name, temp_c, source
 
 ---
 
-## Struktura projektu
+## 📂 Struktura projektu
 
 ```
 PT100_App.py        # główny plik programu
@@ -117,7 +117,7 @@ e) log komunikacji.
 
 Projekt edukacyjny napisany w Pythonie z użyciem PySide6 i matplotlib, przeznaczony do testowania i wizualizacji pomiarów z czujników PT100.
 
-## Licencja
+## ⚖️ Licencja
 
 Ten projekt możesz dowolnie wykorzystywać do celów naukowych lub własnych testów.
-Autor nie ponosi odpowiedzialności za błędne odczyty lub uszkodzenia sprzętu.
+Autorzy nie ponoszą odpowiedzialności za błędne odczyty lub uszkodzenia sprzętu.
