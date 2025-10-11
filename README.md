@@ -28,22 +28,22 @@ pip install pyserial matplotlib PySide6
 
 🚀 Uruchomienie
 
-Podłącz mikrokontroler z czujnikiem PT100 do komputera przez USB.
+1. Podłącz mikrokontroler z czujnikiem PT100 do komputera przez USB.
 
-Uruchom aplikację:
+2. Uruchom aplikację:
 
 python PT100_App.py
 
 
-W oknie programu:
+3. W oknie programu:
 
-kliknij Refresh Ports i wybierz odpowiedni port (np. COM3 lub /dev/ttyUSB0),
+a) kliknij Refresh Ports i wybierz odpowiedni port (np. COM3 lub /dev/ttyUSB0),
 
-naciśnij Connect,
+b) naciśnij Connect,
 
-użyj przycisków LIST, READ, NEW, SET, DEL, aby komunikować się z urządzeniem,
+c) użyj przycisków LIST, READ, NEW, SET, DEL, aby komunikować się z urządzeniem,
 
-włącz opcję Auto save lub wybierz plik CSV, aby logować pomiary.
+d) włącz opcję Auto save lub wybierz plik CSV, aby logować pomiary.
 
 🧩 Obsługiwane komendy (wysyłane do urządzenia)
 Komenda	Opis
@@ -77,7 +77,7 @@ interval – automatyczny pomiar cykliczny
 
 list_export – eksport z tabeli
 
-🪶 Struktura projektu
+Struktura projektu
 PT100_App.py        # główny plik programu
 README.md           # opis projektu
 
