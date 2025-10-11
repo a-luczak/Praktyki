@@ -5,18 +5,18 @@ Program pozwala na konfigurację czujników, odczyt temperatur, logowanie danych
 
 ---
 
-## 🖥️ Funkcje
+## Funkcje
 
-- 🔌 Automatyczne wykrywanie i łączenie z portami szeregowymi  
-- 🧾 Odczyt i konfiguracja czujników PT100 przez komendy tekstowe (`LIST`, `READ`, `NEW`, `SET`, `DEL`)  
-- 💾 Zapisywanie pomiarów do pliku CSV (ręcznie lub automatycznie)  
-- 📈 Wykres temperatury w czasie (z możliwością ograniczenia okna czasowego)  
-- 🧮 Tabela z aktualnymi danymi czujników  
-- 🗒️ Log tekstowy wszystkich komunikatów i poleceń  
+- Automatyczne wykrywanie i łączenie z portami szeregowymi  
+- Odczyt i konfiguracja czujników PT100 przez komendy tekstowe (`LIST`, `READ`, `NEW`, `SET`, `DEL`)  
+- Zapisywanie pomiarów do pliku CSV (ręcznie lub automatycznie)  
+- Wykres temperatury w czasie (z możliwością ograniczenia okna czasowego)  
+- Tabela z aktualnymi danymi czujników  
+- Log tekstowy wszystkich komunikatów i poleceń  
 
 ---
 
-## ⚙️ Wymagania
+## Wymagania
 
 Aplikacja wymaga Pythona **3.8+** oraz następujących bibliotek:
 
@@ -24,11 +24,11 @@ Aplikacja wymaga Pythona **3.8+** oraz następujących bibliotek:
 bash
 pip install pyserial matplotlib PySide6
 ```
-💡 Jeśli nie masz PySide6, aplikacja spróbuje automatycznie użyć PyQt6.
+Jeśli nie masz PySide6, aplikacja spróbuje automatycznie użyć PyQt6.
 
 ---
 
-## 🚀 Uruchomienie
+## Uruchomienie
 
 1. Podłącz mikrokontroler z czujnikiem PT100 do komputera przez USB.
 
@@ -49,7 +49,7 @@ python PT100_App.py
 
 ---
 
-## 🧩 Obsługiwane komendy (wysyłane do urządzenia)
+## Obsługiwane komendy (wysyłane do urządzenia)
 
 | Komenda | Opis |
 |------------|------------|
@@ -70,7 +70,7 @@ lub (dla LIST):
 ```
 ---
 
-## 📊 Logowanie danych
+## Logowanie danych
 
 Dane zapisywane są w formacie CSV:
 ```
@@ -87,14 +87,14 @@ timestamp_iso, epoch_ms, id, name, temp_c, source
 
 ---
 
-## 📂 Struktura projektu
+## Struktura projektu
 
 ```
 PT100_App.py        # główny plik programu
 README.md           # opis projektu
 ```
 
-## 📘 Architektura aplikacji
+## Architektura aplikacji
 
 - SerialBackend – odpowiada za łączność szeregową, uruchamia wątek czytający dane i emituje sygnały do GUI.
 
@@ -113,11 +113,11 @@ d) wykres temperatur,
 e) log komunikacji.
 
 
-## 👤 Autorzy
+## Autorzy
 
 Projekt edukacyjny stworzony przez Michała Dulka i Andrzeja Łuczaka w ramach praktyk na Politechnice Poznańskiej.
 
-## ⚖️ Licencja
+## Licencja
 
 Ten projekt możesz dowolnie wykorzystywać do celów naukowych lub własnych testów.
 Autorzy nie ponoszą odpowiedzialności za błędne odczyty lub uszkodzenia sprzętu.
